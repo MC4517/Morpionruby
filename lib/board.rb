@@ -19,7 +19,7 @@ class Board
     puts "Quelle case veux-tu jouer #{player.name} ? "
     print ">"
     case_number = gets.chomp.to_i
-      if @board[(case_number-1)] == ""
+      if @board[(case_number-1)] == "."
         @board[(case_number-1)] = player.value
       else
         puts "Désolé cette case est déjà jouée"
